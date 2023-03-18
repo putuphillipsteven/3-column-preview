@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+main.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+main.container {
+  max-width: 700px;
+  min-height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.left,
+.middle,
+.right {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  justify-content: space-between;
+  padding: 32px;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+}
+.left h1,
+.middle h1,
+.right h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 32px;
+}
+.left p,
+.middle p,
+.right p {
+  font-size: 12px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.left button,
+.middle button,
+.right button {
+  border: none;
+  border-radius: 24px;
+  background-color: white;
+  font-size: 12px;
+  padding: 8px 24px;
+}
+
+.left {
+  background-color: hsl(31, 77%, 52%);
+}
+.left button {
+  color: hsl(31, 77%, 52%);
+}
+.left button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+.middle {
+  background-color: hsl(184, 100%, 22%);
+}
+.middle button {
+  color: hsl(184, 100%, 22%);
+}
+.middle button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+.right {
+  background-color: hsl(179, 100%, 13%);
+}
+.right button {
+  color: hsl(179, 100%, 13%);
+}
+.right button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 16px;
+  }
+  main.container {
+    flex-direction: column;
+    max-width: 290px;
+  }
+  .left,
+  .middle,
+  .right {
+    padding: 40px 64px;
+  }
+  .left p,
+  .middle p,
+  .right p {
+    line-height: 2;
+  }
+}
+@media (max-width: 786px) and (min-width: 480px) {
+  body {
+    padding: 16px;
+  }
+  .right {
+    min-height: 240px;
+  }
+}/*# sourceMappingURL=styles.css.map */

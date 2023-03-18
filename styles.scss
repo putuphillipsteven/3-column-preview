@@ -1,0 +1,135 @@
+// Breakpoints
+$mobile-design: 375px;
+$desktop-design: 1440px;
+// Primary Color
+$primary-bright-orange: hsl(31, 77%, 52%);
+$primary-dark-cyan: hsl(184, 100%, 22%);
+$primary-very-dark-cyan: hsl(179, 100%, 13%);
+// Neutral Color
+$neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+$neutral-very-light-gray: hsl(0, 0%, 95%);
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+$font-big-shoulders: "Big Shoulders Display", cursive;
+$font-deca: "Lexend Deca", sans-serif;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+main.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+main.container {
+  //   background-color: red;
+  max-width: 700px;
+  min-height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.left,
+.middle,
+.right {
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  justify-content: space-between;
+  padding: 32px;
+  color: white;
+  font-family: $font-deca;
+  h1 {
+    font-family: $font-big-shoulders;
+    font-size: 32px;
+  }
+  p {
+    font-size: 12px;
+    color: $neutral-transparent-white;
+  }
+  button {
+    border: none;
+    border-radius: 24px;
+    background-color: white;
+    font-size: 12px;
+    padding: 8px 24px;
+  }
+}
+
+.left {
+  background-color: $primary-bright-orange;
+  button {
+    color: $primary-bright-orange;
+  }
+  button:hover {
+    background-color: $primary-bright-orange;
+    color: white;
+    outline: 1px solid white;
+    outline-offset: -1px;
+  }
+}
+
+.middle {
+  background-color: $primary-dark-cyan;
+  button {
+    color: $primary-dark-cyan;
+  }
+  button:hover {
+    background-color: $primary-dark-cyan;
+    color: white;
+    outline: 1px solid white;
+    outline-offset: -1px;
+  }
+}
+
+.right {
+  background-color: $primary-very-dark-cyan;
+  button {
+    color: $primary-very-dark-cyan;
+  }
+  button:hover {
+    background-color: $primary-very-dark-cyan;
+    color: white;
+    outline: 1px solid white;
+    outline-offset: -1px;
+  }
+}
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 786px;
+@media (max-width: $breakpoint-mobile) {
+  body {
+    padding: 16px;
+  }
+  main.container {
+    flex-direction: column;
+    max-width: 290px;
+  }
+  .left,
+  .middle,
+  .right {
+    padding: 40px 64px;
+    p {
+      line-height: 2;
+    }
+  }
+}
+@media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-mobile) {
+  body {
+    padding: 16px;
+  }
+  .right {
+    min-height: 240px;
+  }
+}
