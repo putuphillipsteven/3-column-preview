@@ -17,19 +17,18 @@ body {
   min-height: 100vh;
   padding: 8px;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
-
-main.container {
+body main.container {
   max-width: 700px;
   min-height: 400px;
   overflow: hidden;
   border-radius: 8px;
 }
-
-.left,
-.middle,
-.right {
+body main.container .left,
+body main.container .middle,
+body main.container .right {
   display: flex;
   flex-direction: column;
   min-height: 400px;
@@ -38,65 +37,66 @@ main.container {
   color: white;
   font-family: "Lexend Deca", sans-serif;
 }
-.left h2,
-.middle h2,
-.right h2 {
+body main.container .left h2,
+body main.container .middle h2,
+body main.container .right h2 {
   font-family: "Big Shoulders Display", cursive;
   font-size: 32px;
 }
-.left p,
-.middle p,
-.right p {
+body main.container .left p,
+body main.container .middle p,
+body main.container .right p {
   font-size: 12px;
   color: hsla(0, 0%, 100%, 0.75);
 }
-.left button,
-.middle button,
-.right button {
+body main.container .left button,
+body main.container .middle button,
+body main.container .right button {
   border: none;
   border-radius: 24px;
   background-color: white;
   font-size: 12px;
   padding: 8px 24px;
 }
-
-.left {
+body main.container .left {
   background-color: hsl(31, 77%, 52%);
 }
-.left button {
+body main.container .left button {
   color: hsl(31, 77%, 52%);
 }
-.left button:hover {
+body main.container .left button:hover {
   background-color: hsl(31, 77%, 52%);
   color: white;
   outline: 1px solid white;
   outline-offset: -1px;
 }
-
-.middle {
+body main.container .middle {
   background-color: hsl(184, 100%, 22%);
 }
-.middle button {
+body main.container .middle button {
   color: hsl(184, 100%, 22%);
 }
-.middle button:hover {
+body main.container .middle button:hover {
   background-color: hsl(184, 100%, 22%);
   color: white;
   outline: 1px solid white;
   outline-offset: -1px;
 }
-
-.right {
+body main.container .right {
   background-color: hsl(179, 100%, 13%);
 }
-.right button {
+body main.container .right button {
   color: hsl(179, 100%, 13%);
 }
-.right button:hover {
+body main.container .right button:hover {
   background-color: hsl(179, 100%, 13%);
   color: white;
   outline: 1px solid white;
   outline-offset: -1px;
+}
+body section.attribution {
+  font-size: 12px;
+  margin-top: 16px;
 }
 
 @media (max-width: 375px) {
