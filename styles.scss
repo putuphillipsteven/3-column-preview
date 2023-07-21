@@ -28,6 +28,7 @@ main.container {
 
 body {
   min-height: 100vh;
+  padding: 8px;
   align-items: center;
   justify-content: center;
 }
@@ -50,7 +51,7 @@ main.container {
   padding: 32px;
   color: white;
   font-family: $font-deca;
-  h1 {
+  h2 {
     font-family: $font-big-shoulders;
     font-size: 32px;
   }
@@ -106,11 +107,11 @@ main.container {
   }
 }
 
-$breakpoint-mobile: 480px;
+$breakpoint-mobile: 375px;
 $breakpoint-tablet: 786px;
 @media (max-width: $breakpoint-mobile) {
   body {
-    padding: 16px;
+    padding: 8px;
   }
   main.container {
     flex-direction: column;
@@ -127,7 +128,7 @@ $breakpoint-tablet: 786px;
 }
 @media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-mobile) {
   body {
-    padding: 16px;
+    padding: 8px;
   }
   .right {
     min-height: 240px;

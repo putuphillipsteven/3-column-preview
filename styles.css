@@ -15,6 +15,7 @@ main.container {
 
 body {
   min-height: 100vh;
+  padding: 8px;
   align-items: center;
   justify-content: center;
 }
@@ -37,9 +38,9 @@ main.container {
   color: white;
   font-family: "Lexend Deca", sans-serif;
 }
-.left h1,
-.middle h1,
-.right h1 {
+.left h2,
+.middle h2,
+.right h2 {
   font-family: "Big Shoulders Display", cursive;
   font-size: 32px;
 }
@@ -98,9 +99,9 @@ main.container {
   outline-offset: -1px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
   body {
-    padding: 16px;
+    padding: 8px;
   }
   main.container {
     flex-direction: column;
@@ -117,9 +118,9 @@ main.container {
     line-height: 2;
   }
 }
-@media (max-width: 786px) and (min-width: 480px) {
+@media (max-width: 786px) and (min-width: 375px) {
   body {
-    padding: 16px;
+    padding: 8px;
   }
   .right {
     min-height: 240px;
